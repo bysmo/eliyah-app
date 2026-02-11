@@ -48,20 +48,21 @@ Future<void> main() async {
 
   if(GetPlatform.isWeb){
     await Firebase.initializeApp(options: const FirebaseOptions(
-        apiKey: "AIzaSyD0Z911mOoWCVkeGdjhIKwWFPRgvd6ZyAw",
-        authDomain: "stackmart-500c7.firebaseapp.com",
-        projectId: "stackmart-500c7",
-        storageBucket: "stackmart-500c7.appspot.com",
-        messagingSenderId: "491987943015",
-        appId: "1:491987943015:web:d8bc7ab8dbc9991c8f1ec2"
+        apiKey: "AIzaSyAdf-U53fP8NL8HIGGTFlnQSLAydbIODpQ",
+        authDomain: "eliyah-express.firebaseapp.com",
+        projectId: "eliyah-express",
+        storageBucket: "eliyah-express.firebasestorage.app",
+        messagingSenderId: "345708509965",
+        appId: "1:345708509965:web:2b17a9b781632456d20e44",
+        measurementId: "G-1V2NR8B1VH"
     ));
   } else if(GetPlatform.isAndroid) {
     await Firebase.initializeApp(
       options: const FirebaseOptions(
-        apiKey: "AIzaSyCc3OCd5I2xSlnftZ4bFAbuCzMhgQHLivA",
-        appId: "1:491987943015:android:a6fb4303cc4bf3d18f1ec2",
-        messagingSenderId: "491987943015",
-        projectId: "stackmart-500c7",
+        apiKey: "AIzaSyBInIU5dzO0qlYG-ogbM3Q-wzNqWddItaU",
+        appId: "1:345708509965:android:89fcc07099f84332d20e44",
+        messagingSenderId: "345708509965",
+        projectId: "eliyah-express",
       ),
     );
   } else {
