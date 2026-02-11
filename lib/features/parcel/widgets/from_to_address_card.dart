@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/address/domain/models/address_model.dart';
-import 'package:sixam_mart/features/language/controllers/language_controller.dart';
-import 'package:sixam_mart/features/parcel/widgets/custom_icon_layout.dart';
-import 'package:sixam_mart/features/parcel/widgets/custom_vertical_dotted_line.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
+import 'package:eliyah_express/features/address/domain/models/address_model.dart';
+import 'package:eliyah_express/features/language/controllers/language_controller.dart';
+import 'package:eliyah_express/features/parcel/widgets/custom_icon_layout.dart';
+import 'package:eliyah_express/features/parcel/widgets/custom_vertical_dotted_line.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
 
 class TripFromToCard extends StatelessWidget {
   final AddressModel? pickUpAddress;

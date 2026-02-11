@@ -1,7 +1,7 @@
-import 'package:sixam_mart/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart/features/auth/controllers/auth_controller.dart';
-import 'package:sixam_mart/helper/route_helper.dart';
-import 'package:sixam_mart/util/styles.dart';
+import 'package:eliyah_express/features/profile/controllers/profile_controller.dart';
+import 'package:eliyah_express/features/auth/controllers/auth_controller.dart';
+import 'package:eliyah_express/helper/route_helper.dart';
+import 'package:eliyah_express/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

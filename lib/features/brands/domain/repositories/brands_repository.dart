@@ -1,14 +1,14 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:sixam_mart/api/api_client.dart';
-import 'package:sixam_mart/api/local_client.dart';
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/features/brands/domain/models/brands_model.dart';
-import 'package:sixam_mart/features/brands/domain/repositories/brands_repository_interface.dart';
-import 'package:sixam_mart/features/item/domain/models/item_model.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/util/app_constants.dart';
+import 'package:eliyah_express/api/api_client.dart';
+import 'package:eliyah_express/api/local_client.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/features/brands/domain/models/brands_model.dart';
+import 'package:eliyah_express/features/brands/domain/repositories/brands_repository_interface.dart';
+import 'package:eliyah_express/features/item/domain/models/item_model.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/util/app_constants.dart';
 
 class BrandsRepository implements BrandsRepositoryInterface{
   final ApiClient apiClient;

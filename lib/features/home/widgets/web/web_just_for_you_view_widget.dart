@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shimmer_animation/shimmer_animation.dart';
-import 'package:sixam_mart/common/widgets/hover/text_hover.dart';
-import 'package:sixam_mart/features/item/controllers/campaign_controller.dart';
-import 'package:sixam_mart/features/item/controllers/item_controller.dart';
-import 'package:sixam_mart/features/language/controllers/language_controller.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/custom_image.dart';
-import 'package:sixam_mart/common/widgets/hover/on_hover.dart';
-import 'package:sixam_mart/features/home/widgets/web/widgets/arrow_icon_button.dart';
+import 'package:eliyah_express/common/widgets/hover/text_hover.dart';
+import 'package:eliyah_express/features/item/controllers/campaign_controller.dart';
+import 'package:eliyah_express/features/item/controllers/item_controller.dart';
+import 'package:eliyah_express/features/language/controllers/language_controller.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_image.dart';
+import 'package:eliyah_express/common/widgets/hover/on_hover.dart';
+import 'package:eliyah_express/features/home/widgets/web/widgets/arrow_icon_button.dart';
 
 class WebJustForYouViewWidget extends StatefulWidget {
   const WebJustForYouViewWidget({super.key});

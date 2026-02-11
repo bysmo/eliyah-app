@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/models/response_model.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/features/address/domain/models/address_model.dart';
-import 'package:sixam_mart/features/address/domain/services/address_service_interface.dart';
-import 'package:sixam_mart/features/checkout/controllers/checkout_controller.dart';
+import 'package:eliyah_express/common/models/response_model.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/features/address/domain/models/address_model.dart';
+import 'package:eliyah_express/features/address/domain/services/address_service_interface.dart';
+import 'package:eliyah_express/features/checkout/controllers/checkout_controller.dart';
 
 class AddressController extends GetxController implements GetxService {
   final AddressServiceInterface addressServiceInterface;

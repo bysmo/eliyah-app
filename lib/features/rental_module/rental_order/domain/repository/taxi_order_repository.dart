@@ -1,5 +1,5 @@
-import 'package:sixam_mart/api/api_client.dart';
-import 'package:sixam_mart/features/rental_module/rental_order/domain/repository/taxi_order_repository_interface.dart';
+import 'package:eliyah_express/api/api_client.dart';
+import 'package:eliyah_express/features/rental_module/rental_order/domain/repository/taxi_order_repository_interface.dart';
 
 class TaxiOrderRepository implements TaxiOrderRepositoryInterface {
   final ApiClient apiClient;

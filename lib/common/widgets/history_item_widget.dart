@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/models/transaction_model.dart';
-import 'package:sixam_mart/helper/date_converter.dart';
-import 'package:sixam_mart/helper/price_converter.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
+import 'package:eliyah_express/common/models/transaction_model.dart';
+import 'package:eliyah_express/helper/date_converter.dart';
+import 'package:eliyah_express/helper/price_converter.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
 
 class HistoryItemWidget extends StatelessWidget {
   final int index;

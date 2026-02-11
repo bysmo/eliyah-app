@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
-import 'package:sixam_mart/features/checkout/controllers/checkout_controller.dart';
-import 'package:sixam_mart/helper/price_converter.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/helper/string_extension.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/features/checkout/widgets/payment_method_bottom_sheet.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/features/checkout/controllers/checkout_controller.dart';
+import 'package:eliyah_express/helper/price_converter.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/helper/string_extension.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/features/checkout/widgets/payment_method_bottom_sheet.dart';
 
 class PaymentSection extends StatelessWidget {
   final int? storeId;

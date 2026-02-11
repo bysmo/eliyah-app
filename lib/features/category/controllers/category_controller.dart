@@ -1,9 +1,9 @@
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/features/category/domain/models/category_model.dart';
-import 'package:sixam_mart/features/item/domain/models/item_model.dart';
-import 'package:sixam_mart/features/store/domain/models/store_model.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/features/category/domain/models/category_model.dart';
+import 'package:eliyah_express/features/item/domain/models/item_model.dart';
+import 'package:eliyah_express/features/store/domain/models/store_model.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/category/domain/services/category_service_interface.dart';
+import 'package:eliyah_express/features/category/domain/services/category_service_interface.dart';
 
 class CategoryController extends GetxController implements GetxService {
   final CategoryServiceInterface categoryServiceInterface;

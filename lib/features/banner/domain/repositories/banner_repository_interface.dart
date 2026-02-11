@@ -1,5 +1,5 @@
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/interfaces/repository_interface.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/interfaces/repository_interface.dart';
 
 abstract class BannerRepositoryInterface implements RepositoryInterface {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sixam_mart/common/widgets/custom_asset_image_widget.dart';
-import 'package:sixam_mart/util/dimensions.dart';
+import 'package:eliyah_express/common/widgets/custom_asset_image_widget.dart';
+import 'package:eliyah_express/util/dimensions.dart';
 
 class CustomIconLayout extends StatelessWidget {
   final double height;

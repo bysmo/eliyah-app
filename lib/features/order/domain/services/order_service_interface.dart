@@ -1,9 +1,9 @@
 import 'package:get/get_connect/http/src/response/response.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart/features/checkout/domain/models/payment_model.dart';
-import 'package:sixam_mart/features/order/domain/models/order_cancellation_body.dart';
-import 'package:sixam_mart/features/order/domain/models/order_details_model.dart';
-import 'package:sixam_mart/features/order/domain/models/order_model.dart';
+import 'package:eliyah_express/features/checkout/domain/models/payment_model.dart';
+import 'package:eliyah_express/features/order/domain/models/order_cancellation_body.dart';
+import 'package:eliyah_express/features/order/domain/models/order_details_model.dart';
+import 'package:eliyah_express/features/order/domain/models/order_model.dart';
 
 abstract class OrderServiceInterface {
   Future<PaginatedOrderModel?> getRunningOrderList(int offset, bool fromDashboard);

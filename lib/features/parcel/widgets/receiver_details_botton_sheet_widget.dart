@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
-import 'package:sixam_mart/features/checkout/controllers/checkout_controller.dart';
-import 'package:sixam_mart/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart/features/address/domain/models/address_model.dart';
-import 'package:sixam_mart/features/parcel/controllers/parcel_controller.dart';
-import 'package:sixam_mart/features/parcel/domain/models/parcel_category_model.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/helper/route_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/custom_button.dart';
-import 'package:sixam_mart/common/widgets/my_text_field.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/features/checkout/controllers/checkout_controller.dart';
+import 'package:eliyah_express/features/profile/controllers/profile_controller.dart';
+import 'package:eliyah_express/features/address/domain/models/address_model.dart';
+import 'package:eliyah_express/features/parcel/controllers/parcel_controller.dart';
+import 'package:eliyah_express/features/parcel/domain/models/parcel_category_model.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/helper/route_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_button.dart';
+import 'package:eliyah_express/common/widgets/my_text_field.dart';
 
 class ReceiverDetailsBottomSheetWidget extends StatefulWidget {
   final ParcelCategoryModel category;

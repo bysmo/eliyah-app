@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/widgets/card_design/store_card.dart';
-import 'package:sixam_mart/common/widgets/title_widget.dart';
-import 'package:sixam_mart/features/home/widgets/web/web_new_on_view_widget.dart';
-import 'package:sixam_mart/features/store/controllers/store_controller.dart';
-import 'package:sixam_mart/features/store/domain/models/store_model.dart';
-import 'package:sixam_mart/helper/route_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
+import 'package:eliyah_express/common/widgets/card_design/store_card.dart';
+import 'package:eliyah_express/common/widgets/title_widget.dart';
+import 'package:eliyah_express/features/home/widgets/web/web_new_on_view_widget.dart';
+import 'package:eliyah_express/features/store/controllers/store_controller.dart';
+import 'package:eliyah_express/features/store/domain/models/store_model.dart';
+import 'package:eliyah_express/helper/route_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
 class TopOffersNearMe extends StatelessWidget {
   const TopOffersNearMe({super.key});
 

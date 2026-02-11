@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
-import 'package:sixam_mart/features/business/domain/models/business_plan_body.dart';
-import 'package:sixam_mart/features/business/domain/models/package_model.dart';
-import 'package:sixam_mart/features/business/domain/repositories/business_repo_interface.dart';
-import 'package:sixam_mart/features/business/widgets/business_payment_method_bottom_sheet_widget.dart';
-import 'package:sixam_mart/features/home/controllers/home_controller.dart';
-import 'package:sixam_mart/helper/auth_helper.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/helper/route_helper.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/features/business/domain/models/business_plan_body.dart';
+import 'package:eliyah_express/features/business/domain/models/package_model.dart';
+import 'package:eliyah_express/features/business/domain/repositories/business_repo_interface.dart';
+import 'package:eliyah_express/features/business/widgets/business_payment_method_bottom_sheet_widget.dart';
+import 'package:eliyah_express/features/home/controllers/home_controller.dart';
+import 'package:eliyah_express/helper/auth_helper.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/helper/route_helper.dart';
 import 'business_service_interface.dart';
 import 'package:universal_html/html.dart' as html;
 

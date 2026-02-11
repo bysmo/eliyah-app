@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/cart/controllers/cart_controller.dart';
-import 'package:sixam_mart/features/cart/domain/models/cart_model.dart';
-import 'package:sixam_mart/features/store/domain/models/store_model.dart';
-import 'package:sixam_mart/helper/route_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/web_constrained_box.dart';
-import 'package:sixam_mart/features/cart/widgets/cart_item_widget.dart';
-import 'package:sixam_mart/features/store/screens/store_screen.dart';
+import 'package:eliyah_express/features/cart/controllers/cart_controller.dart';
+import 'package:eliyah_express/features/cart/domain/models/cart_model.dart';
+import 'package:eliyah_express/features/store/domain/models/store_model.dart';
+import 'package:eliyah_express/helper/route_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/web_constrained_box.dart';
+import 'package:eliyah_express/features/cart/widgets/cart_item_widget.dart';
+import 'package:eliyah_express/features/store/screens/store_screen.dart';
 
 class WebCardItemsWidget extends StatelessWidget {
   final List<CartModel> cartList;

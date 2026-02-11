@@ -1,17 +1,17 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/item/domain/models/item_model.dart';
-import 'package:sixam_mart/common/models/module_model.dart';
-import 'package:sixam_mart/features/cart/domain/models/cart_model.dart';
-import 'package:sixam_mart/features/cart/domain/models/online_cart_model.dart';
-import 'package:sixam_mart/features/cart/domain/services/cart_service_interface.dart';
-import 'package:sixam_mart/features/checkout/domain/models/place_order_body_model.dart';
-import 'package:sixam_mart/features/home/screens/home_screen.dart';
-import 'package:sixam_mart/features/item/controllers/item_controller.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/helper/auth_helper.dart';
-import 'package:sixam_mart/helper/date_converter.dart';
-import 'package:sixam_mart/helper/module_helper.dart';
-import 'package:sixam_mart/helper/price_converter.dart';
+import 'package:eliyah_express/features/item/domain/models/item_model.dart';
+import 'package:eliyah_express/common/models/module_model.dart';
+import 'package:eliyah_express/features/cart/domain/models/cart_model.dart';
+import 'package:eliyah_express/features/cart/domain/models/online_cart_model.dart';
+import 'package:eliyah_express/features/cart/domain/services/cart_service_interface.dart';
+import 'package:eliyah_express/features/checkout/domain/models/place_order_body_model.dart';
+import 'package:eliyah_express/features/home/screens/home_screen.dart';
+import 'package:eliyah_express/features/item/controllers/item_controller.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/helper/auth_helper.dart';
+import 'package:eliyah_express/helper/date_converter.dart';
+import 'package:eliyah_express/helper/module_helper.dart';
+import 'package:eliyah_express/helper/price_converter.dart';
 
 class CartController extends GetxController implements GetxService {
   final CartServiceInterface cartServiceInterface;

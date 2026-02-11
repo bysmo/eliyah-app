@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/models/choose_us_model.dart';
-import 'package:sixam_mart/features/language/domain/models/language_model.dart';
-import 'package:sixam_mart/util/images.dart';
+import 'package:eliyah_express/common/models/choose_us_model.dart';
+import 'package:eliyah_express/features/language/domain/models/language_model.dart';
+import 'package:eliyah_express/util/images.dart';
 
 class AppConstants {
   static const String appName = '6amMart';

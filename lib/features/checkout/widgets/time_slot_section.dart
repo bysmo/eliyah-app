@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:just_the_tooltip/just_the_tooltip.dart';
-import 'package:sixam_mart/features/cart/domain/models/cart_model.dart';
-import 'package:sixam_mart/common/models/config_model.dart';
-import 'package:sixam_mart/features/checkout/controllers/checkout_controller.dart';
-import 'package:sixam_mart/helper/auth_helper.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/features/checkout/widgets/time_slot_bottom_sheet.dart';
+import 'package:eliyah_express/features/cart/domain/models/cart_model.dart';
+import 'package:eliyah_express/common/models/config_model.dart';
+import 'package:eliyah_express/features/checkout/controllers/checkout_controller.dart';
+import 'package:eliyah_express/helper/auth_helper.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/features/checkout/widgets/time_slot_bottom_sheet.dart';
 
 class TimeSlotSection extends StatelessWidget {
   final int? storeId;

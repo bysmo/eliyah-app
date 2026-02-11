@@ -2,10 +2,10 @@ import 'dart:convert';
 
 import 'package:get/get_connect/connect.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sixam_mart/api/api_client.dart';
-import 'package:sixam_mart/features/payment/domain/models/offline_method_model.dart';
-import 'package:sixam_mart/features/payment/domain/repositories/payment_repository_interface.dart';
-import 'package:sixam_mart/util/app_constants.dart';
+import 'package:eliyah_express/api/api_client.dart';
+import 'package:eliyah_express/features/payment/domain/models/offline_method_model.dart';
+import 'package:eliyah_express/features/payment/domain/repositories/payment_repository_interface.dart';
+import 'package:eliyah_express/util/app_constants.dart';
 
 class PaymentRepository implements PaymentRepositoryInterface {
   final ApiClient apiClient;

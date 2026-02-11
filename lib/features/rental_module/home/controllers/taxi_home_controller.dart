@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/features/rental_module/home/domain/services/taxi_home_service_interface.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/features/rental_module/home/domain/services/taxi_home_service_interface.dart';
 
 class TaxiHomeController extends GetxController implements GetxService {
   final TaxiHomeServiceInterface taxiHomeServiceInterface;

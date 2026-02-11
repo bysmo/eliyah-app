@@ -1,9 +1,9 @@
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/features/item/domain/models/basic_campaign_model.dart';
-import 'package:sixam_mart/features/item/domain/models/item_model.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/features/item/domain/models/basic_campaign_model.dart';
+import 'package:eliyah_express/features/item/domain/models/item_model.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/item/domain/services/campaign_service_interface.dart';
+import 'package:eliyah_express/features/item/domain/services/campaign_service_interface.dart';
 
 class CampaignController extends GetxController implements GetxService {
   final CampaignServiceInterface campaignServiceInterface;

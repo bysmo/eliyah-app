@@ -1,12 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/widgets/custom_asset_image_widget.dart';
-import 'package:sixam_mart/features/home/controllers/advertisement_controller.dart';
-import 'package:sixam_mart/features/home/widgets/highlight_widget.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_asset_image_widget.dart';
+import 'package:eliyah_express/features/home/controllers/advertisement_controller.dart';
+import 'package:eliyah_express/features/home/widgets/highlight_widget.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
 
 class WebHighlightWidget extends StatefulWidget {
   const WebHighlightWidget({super.key});

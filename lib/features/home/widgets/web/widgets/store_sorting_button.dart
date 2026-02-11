@@ -1,6 +1,6 @@
-import 'package:sixam_mart/features/store/controllers/store_controller.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
+import 'package:eliyah_express/features/store/controllers/store_controller.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

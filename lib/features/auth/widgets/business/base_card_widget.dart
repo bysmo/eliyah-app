@@ -1,8 +1,8 @@
-import 'package:sixam_mart/features/auth/controllers/store_registration_controller.dart';
+import 'package:eliyah_express/features/auth/controllers/store_registration_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
 
 class BaseCardWidget extends StatelessWidget {
   final StoreRegistrationController storeRegistrationController;

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/cart/controllers/cart_controller.dart';
-import 'package:sixam_mart/features/store/controllers/store_controller.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/footer_view.dart';
-import 'package:sixam_mart/common/widgets/item_view.dart';
-import 'package:sixam_mart/common/widgets/paginated_list_view.dart';
-import 'package:sixam_mart/common/widgets/veg_filter_widget.dart';
-import 'package:sixam_mart/features/store/widgets/bottom_cart_widget.dart';
+import 'package:eliyah_express/features/cart/controllers/cart_controller.dart';
+import 'package:eliyah_express/features/store/controllers/store_controller.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/footer_view.dart';
+import 'package:eliyah_express/common/widgets/item_view.dart';
+import 'package:eliyah_express/common/widgets/paginated_list_view.dart';
+import 'package:eliyah_express/common/widgets/veg_filter_widget.dart';
+import 'package:eliyah_express/features/store/widgets/bottom_cart_widget.dart';
 
 class StoreItemSearchScreen extends StatefulWidget {
   final String? storeID;

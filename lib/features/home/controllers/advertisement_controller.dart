@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/features/home/domain/models/advertisement_model.dart';
-import 'package:sixam_mart/features/home/domain/services/advertisement_service_interface.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/features/home/domain/models/advertisement_model.dart';
+import 'package:eliyah_express/features/home/domain/services/advertisement_service_interface.dart';
 
 class AdvertisementController extends GetxController implements GetxService {
   final AdvertisementServiceInterface advertisementServiceInterface;

@@ -1,22 +1,22 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:sixam_mart/common/controllers/theme_controller.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
-import 'package:sixam_mart/common/widgets/footer_view.dart';
-import 'package:sixam_mart/features/address/domain/models/address_model.dart';
-import 'package:sixam_mart/features/location/controllers/location_controller.dart';
-import 'package:sixam_mart/features/location/widgets/permission_dialog_widget.dart';
-import 'package:sixam_mart/helper/address_helper.dart';
-import 'package:sixam_mart/helper/marker_helper.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/custom_app_bar.dart';
+import 'package:eliyah_express/common/controllers/theme_controller.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/common/widgets/footer_view.dart';
+import 'package:eliyah_express/features/address/domain/models/address_model.dart';
+import 'package:eliyah_express/features/location/controllers/location_controller.dart';
+import 'package:eliyah_express/features/location/widgets/permission_dialog_widget.dart';
+import 'package:eliyah_express/helper/address_helper.dart';
+import 'package:eliyah_express/helper/marker_helper.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/widgets/menu_drawer.dart';
-import 'package:sixam_mart/features/order/widgets/address_details_widget.dart';
+import 'package:eliyah_express/common/widgets/menu_drawer.dart';
+import 'package:eliyah_express/features/order/widgets/address_details_widget.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class MapScreen extends StatefulWidget {

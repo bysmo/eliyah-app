@@ -1,14 +1,14 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/order/domain/models/order_model.dart';
-import 'package:sixam_mart/features/payment/controllers/payment_controller.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/custom_button.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
-import 'package:sixam_mart/common/widgets/custom_text_field.dart';
+import 'package:eliyah_express/features/order/domain/models/order_model.dart';
+import 'package:eliyah_express/features/payment/controllers/payment_controller.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_button.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/common/widgets/custom_text_field.dart';
 
 class OfflineInfoEditDialogWidget extends StatefulWidget {
   final OfflinePayment offlinePayment;

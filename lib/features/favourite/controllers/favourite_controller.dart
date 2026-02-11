@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:sixam_mart/common/models/response_model.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/features/item/domain/models/item_model.dart';
-import 'package:sixam_mart/features/store/domain/models/store_model.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/common/models/response_model.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/features/item/domain/models/item_model.dart';
+import 'package:eliyah_express/features/store/domain/models/store_model.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/favourite/domain/services/favourite_service_interface.dart';
+import 'package:eliyah_express/features/favourite/domain/services/favourite_service_interface.dart';
 
 class FavouriteController extends GetxController implements GetxService {
   final FavouriteServiceInterface favouriteServiceInterface;

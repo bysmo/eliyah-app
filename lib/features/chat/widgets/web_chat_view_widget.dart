@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:sixam_mart/features/chat/controllers/chat_controller.dart';
-import 'package:sixam_mart/features/chat/enums/user_type_enum.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart/features/notification/domain/models/notification_body_model.dart';
-import 'package:sixam_mart/features/chat/domain/models/conversation_model.dart';
-import 'package:sixam_mart/helper/auth_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/images.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/custom_image.dart';
-import 'package:sixam_mart/common/widgets/custom_snackbar.dart';
-import 'package:sixam_mart/common/widgets/footer_view.dart';
-import 'package:sixam_mart/common/widgets/not_logged_in_screen.dart';
-import 'package:sixam_mart/common/widgets/paginated_list_view.dart';
-import 'package:sixam_mart/common/widgets/web_search_field.dart';
-import 'package:sixam_mart/features/chat/widgets/chatting_shimmer.dart';
-import 'package:sixam_mart/features/chat/widgets/message_bubble_widget.dart';
-import 'package:sixam_mart/features/chat/widgets/web_conversation_list_view_widget.dart';
+import 'package:eliyah_express/features/chat/controllers/chat_controller.dart';
+import 'package:eliyah_express/features/chat/enums/user_type_enum.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/features/profile/controllers/profile_controller.dart';
+import 'package:eliyah_express/features/notification/domain/models/notification_body_model.dart';
+import 'package:eliyah_express/features/chat/domain/models/conversation_model.dart';
+import 'package:eliyah_express/helper/auth_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/images.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_image.dart';
+import 'package:eliyah_express/common/widgets/custom_snackbar.dart';
+import 'package:eliyah_express/common/widgets/footer_view.dart';
+import 'package:eliyah_express/common/widgets/not_logged_in_screen.dart';
+import 'package:eliyah_express/common/widgets/paginated_list_view.dart';
+import 'package:eliyah_express/common/widgets/web_search_field.dart';
+import 'package:eliyah_express/features/chat/widgets/chatting_shimmer.dart';
+import 'package:eliyah_express/features/chat/widgets/message_bubble_widget.dart';
+import 'package:eliyah_express/features/chat/widgets/web_conversation_list_view_widget.dart';
 
 
 class WebChatViewWidget extends StatefulWidget {

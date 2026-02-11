@@ -1,8 +1,8 @@
 import 'package:image_picker/image_picker.dart';
-import 'package:sixam_mart/common/models/response_model.dart';
-import 'package:sixam_mart/features/profile/domain/models/update_user_model.dart';
-import 'package:sixam_mart/features/profile/domain/models/userinfo_model.dart';
-import 'package:sixam_mart/interfaces/repository_interface.dart';
+import 'package:eliyah_express/common/models/response_model.dart';
+import 'package:eliyah_express/features/profile/domain/models/update_user_model.dart';
+import 'package:eliyah_express/features/profile/domain/models/userinfo_model.dart';
+import 'package:eliyah_express/interfaces/repository_interface.dart';
 
 abstract class ProfileRepositoryInterface extends RepositoryInterface {
   //Future<dynamic> updateProfile(UserInfoModel userInfoModel, XFile? data, String token);

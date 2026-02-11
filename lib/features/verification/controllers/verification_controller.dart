@@ -1,8 +1,8 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/models/response_model.dart';
-import 'package:sixam_mart/features/profile/controllers/profile_controller.dart';
-import 'package:sixam_mart/features/verification/domein/models/verification_data_model.dart';
-import 'package:sixam_mart/features/verification/domein/services/verification_service_interface.dart';
+import 'package:eliyah_express/common/models/response_model.dart';
+import 'package:eliyah_express/features/profile/controllers/profile_controller.dart';
+import 'package:eliyah_express/features/verification/domein/models/verification_data_model.dart';
+import 'package:eliyah_express/features/verification/domein/services/verification_service_interface.dart';
 
 class VerificationController extends GetxController implements GetxService {
   final VerificationServiceInterface verificationServiceInterface;

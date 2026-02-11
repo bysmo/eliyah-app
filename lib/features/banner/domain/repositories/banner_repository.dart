@@ -1,16 +1,16 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:sixam_mart/api/api_client.dart';
-import 'package:sixam_mart/api/local_client.dart';
-import 'package:sixam_mart/common/enums/data_source_enum.dart';
-import 'package:sixam_mart/features/banner/domain/models/banner_model.dart';
-import 'package:sixam_mart/features/banner/domain/models/others_banner_model.dart';
-import 'package:sixam_mart/features/banner/domain/models/promotional_banner_model.dart';
-import 'package:sixam_mart/features/banner/domain/repositories/banner_repository_interface.dart';
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/helper/header_helper.dart';
-import 'package:sixam_mart/util/app_constants.dart';
+import 'package:eliyah_express/api/api_client.dart';
+import 'package:eliyah_express/api/local_client.dart';
+import 'package:eliyah_express/common/enums/data_source_enum.dart';
+import 'package:eliyah_express/features/banner/domain/models/banner_model.dart';
+import 'package:eliyah_express/features/banner/domain/models/others_banner_model.dart';
+import 'package:eliyah_express/features/banner/domain/models/promotional_banner_model.dart';
+import 'package:eliyah_express/features/banner/domain/repositories/banner_repository_interface.dart';
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/helper/header_helper.dart';
+import 'package:eliyah_express/util/app_constants.dart';
 
 class BannerRepository implements BannerRepositoryInterface {
   final ApiClient apiClient;

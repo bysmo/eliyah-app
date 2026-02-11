@@ -1,14 +1,14 @@
-import 'package:sixam_mart/common/widgets/web_page_title_widget.dart';
-import 'package:sixam_mart/features/review/controllers/review_controller.dart';
-import 'package:sixam_mart/features/review/widgets/rating_widget.dart';
-import 'package:sixam_mart/features/review/widgets/review_list_widget.dart';
-import 'package:sixam_mart/features/store/domain/models/store_model.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/common/widgets/custom_app_bar.dart';
-import 'package:sixam_mart/common/widgets/footer_view.dart';
-import 'package:sixam_mart/common/widgets/menu_drawer.dart';
-import 'package:sixam_mart/common/widgets/no_data_screen.dart';
+import 'package:eliyah_express/common/widgets/web_page_title_widget.dart';
+import 'package:eliyah_express/features/review/controllers/review_controller.dart';
+import 'package:eliyah_express/features/review/widgets/rating_widget.dart';
+import 'package:eliyah_express/features/review/widgets/review_list_widget.dart';
+import 'package:eliyah_express/features/store/domain/models/store_model.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/common/widgets/custom_app_bar.dart';
+import 'package:eliyah_express/common/widgets/footer_view.dart';
+import 'package:eliyah_express/common/widgets/menu_drawer.dart';
+import 'package:eliyah_express/common/widgets/no_data_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,6 +1,6 @@
-import 'package:sixam_mart/api/api_client.dart';
-import 'package:sixam_mart/features/auth/domain/models/delivery_man_body.dart';
-import 'package:sixam_mart/interfaces/repository_interface.dart';
+import 'package:eliyah_express/api/api_client.dart';
+import 'package:eliyah_express/features/auth/domain/models/delivery_man_body.dart';
+import 'package:eliyah_express/interfaces/repository_interface.dart';
 
 abstract class DeliverymanRegistrationRepositoryInterface extends RepositoryInterface{
   @override

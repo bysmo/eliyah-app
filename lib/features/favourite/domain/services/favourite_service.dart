@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/models/response_model.dart';
-import 'package:sixam_mart/features/item/domain/models/item_model.dart';
-import 'package:sixam_mart/features/store/domain/models/store_model.dart';
-import 'package:sixam_mart/features/favourite/domain/repositories/favourite_repository_interface.dart';
-import 'package:sixam_mart/features/favourite/domain/services/favourite_service_interface.dart';
-import 'package:sixam_mart/helper/address_helper.dart';
+import 'package:eliyah_express/common/models/response_model.dart';
+import 'package:eliyah_express/features/item/domain/models/item_model.dart';
+import 'package:eliyah_express/features/store/domain/models/store_model.dart';
+import 'package:eliyah_express/features/favourite/domain/repositories/favourite_repository_interface.dart';
+import 'package:eliyah_express/features/favourite/domain/services/favourite_service_interface.dart';
+import 'package:eliyah_express/helper/address_helper.dart';
 
 class FavouriteService implements FavouriteServiceInterface {
   final FavouriteRepositoryInterface favouriteRepositoryInterface;

@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:sixam_mart/common/models/response_model.dart';
-import 'package:sixam_mart/features/verification/domein/models/verification_data_model.dart';
-import 'package:sixam_mart/interfaces/repository_interface.dart';
+import 'package:eliyah_express/common/models/response_model.dart';
+import 'package:eliyah_express/features/verification/domein/models/verification_data_model.dart';
+import 'package:eliyah_express/interfaces/repository_interface.dart';
 
 abstract class VerificationRepositoryInterface<T> extends RepositoryInterface<T>{
   Future<ResponseModel> forgetPassword({String? phone, String? email});

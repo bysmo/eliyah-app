@@ -1,10 +1,10 @@
-import 'package:sixam_mart/features/search/controllers/search_controller.dart' as search;
-import 'package:sixam_mart/features/splash/controllers/splash_controller.dart';
-import 'package:sixam_mart/helper/responsive_helper.dart';
-import 'package:sixam_mart/util/dimensions.dart';
-import 'package:sixam_mart/util/styles.dart';
-import 'package:sixam_mart/common/widgets/custom_button.dart';
-import 'package:sixam_mart/features/search/widgets/custom_check_box_widget.dart';
+import 'package:eliyah_express/features/search/controllers/search_controller.dart' as search;
+import 'package:eliyah_express/features/splash/controllers/splash_controller.dart';
+import 'package:eliyah_express/helper/responsive_helper.dart';
+import 'package:eliyah_express/util/dimensions.dart';
+import 'package:eliyah_express/util/styles.dart';
+import 'package:eliyah_express/common/widgets/custom_button.dart';
+import 'package:eliyah_express/features/search/widgets/custom_check_box_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
