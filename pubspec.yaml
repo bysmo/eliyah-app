@@ -1,5 +1,5 @@
 name: eliyah_express
-description: Eliyah-Express - A Multi-vendor Food, Grocery, eCommerce, Pharmacy & Parcel service.
+description: Eliyah-Express - Une plateforme complete e-commerce et de livraison de produits et de services
 publish_to: 'none' #
 version: 1.0.0+1
 
@@ -84,6 +84,16 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  web:
+    generate: true
+  image_path: "assets/image/logo.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/image/logo.png"
 
 flutter:
   uses-material-design: true
