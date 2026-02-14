@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!-- WARNING: This configuration is for DEVELOPMENT/TESTING ONLY -->
+    <!-- DO NOT use this in production as it makes your app vulnerable to security attacks -->
+    
+    <!-- Base configuration for all connections -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </base-config>
+    
+    <!-- Specific configuration for development server -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">aladints.com</domain>
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+    </domain-config>
+</network-security-config>

@@ -15,10 +15,10 @@ class AuthService implements AuthServiceInterface{
     return authRepositoryInterface.isSharedPrefNotificationActive();
   }
 
-  @override
   Future<ResponseModel> registration(SignUpBodyModel signUpBody) async {
     Response response = await authRepositoryInterface.registration(signUpBody);
-    if(response.statusCode == 200){
+    // Accept both 200 (OK) and 201 (Created) as success codes
+    if(response.statusCode == 200 || response.statusCode == 201){
       AuthResponseModel authResponse = AuthResponseModel.fromJson(response.body);
       await _updateHeaderFunctionality(authResponse, alreadyInApp: false);
       return ResponseModel(true, authResponse.token??'', authResponseModel: authResponse);
@@ -30,7 +30,8 @@ class AuthService implements AuthServiceInterface{
   @override
   Future<ResponseModel> login({required String emailOrPhone, required String password, required String loginType, required String fieldType, bool alreadyInApp = false}) async {
     Response response = await authRepositoryInterface.login(emailOrPhone: emailOrPhone, password: password, loginType: loginType, fieldType: fieldType);
-    if (response.statusCode == 200) {
+    // Accept both 200 (OK) and 201 (Created) as success codes
+    if (response.statusCode == 200 || response.statusCode == 201) {
       AuthResponseModel authResponse = AuthResponseModel.fromJson(response.body);
       await _updateHeaderFunctionality(authResponse, alreadyInApp: alreadyInApp);
       return ResponseModel(true, authResponse.token??'', authResponseModel: authResponse);
@@ -50,7 +51,8 @@ class AuthService implements AuthServiceInterface{
   @override
   Future<ResponseModel> otpLogin({required String phone, required String otp, required String loginType, required String verified, bool alreadyInApp = false}) async {
     Response response = await authRepositoryInterface.otpLogin(phone: phone, otp: otp, loginType: loginType, verified: verified);
-    if (response.statusCode == 200) {
+    // Accept both 200 (OK) and 201 (Created) as success codes
+    if (response.statusCode == 200 || response.statusCode == 201) {
       AuthResponseModel authResponse = AuthResponseModel.fromJson(response.body);
       await _updateHeaderFunctionality(authResponse, alreadyInApp: alreadyInApp);
       return ResponseModel(true, authResponse.token??'', authResponseModel: authResponse);
@@ -67,7 +69,8 @@ class AuthService implements AuthServiceInterface{
   @override
   Future<ResponseModel> loginWithSocialMedia(SocialLogInBody socialLogInModel, {bool isCustomerVerificationOn = false}) async {
     Response response = await authRepositoryInterface.loginWithSocialMedia(socialLogInModel);
-    if (response.statusCode == 200) {
+    // Accept both 200 (OK) and 201 (Created) as success codes
+    if (response.statusCode == 200 || response.statusCode == 201) {
       AuthResponseModel authResponse = AuthResponseModel.fromJson(response.body);
       await _updateHeaderFunctionality(authResponse);
       return ResponseModel(true, authResponse.token??'', authResponseModel: authResponse);
@@ -79,7 +82,8 @@ class AuthService implements AuthServiceInterface{
   @override
   Future<ResponseModel> updatePersonalInfo({required String name, required String? phone, required String loginType, required String? email, required String? referCode, bool alreadyInApp = false}) async {
     Response response = await authRepositoryInterface.updatePersonalInfo(name: name, phone: phone, email: email, loginType: loginType, referCode: referCode);
-    if (response.statusCode == 200) {
+    // Accept both 200 (OK) and 201 (Created) as success codes
+    if (response.statusCode == 200 || response.statusCode == 201) {
       AuthResponseModel authResponse = AuthResponseModel.fromJson(response.body);
       await _updateHeaderFunctionality(authResponse, alreadyInApp: alreadyInApp);
       return ResponseModel(true, authResponse.token??'', authResponseModel: authResponse);

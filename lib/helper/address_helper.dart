@@ -27,7 +27,10 @@ class AddressHelper {
     SharedPreferences sharedPreferences = Get.find<SharedPreferences>();
     AddressModel? addressModel;
     try {
-      addressModel = AddressModel.fromJson(jsonDecode(sharedPreferences.getString(AppConstants.userAddress)!));
+      String? addressString = sharedPreferences.getString(AppConstants.userAddress);
+      if (addressString != null) {
+        addressModel = AddressModel.fromJson(jsonDecode(addressString));
+      }
     }catch(e) {
       if(!GetPlatform.isWeb) {
         debugPrint('Address Catch exception : $e');

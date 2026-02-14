@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "345708509965",
+    "project_id": "eliyah-express",
+    "storage_bucket": "eliyah-express.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345708509965:android:89fcc07099f84332d20e44",
+        "android_client_info": {
+          "package_name": "com.eliyah.express"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBInIU5dzO0qlYG-ogbM3Q-wzNqWddItaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -135,7 +135,10 @@ class SplashRepository implements SplashRepositoryInterface {
   Future<void> setStoreCategory(int storeCategoryID) async {
     AddressModel? addressModel;
     try {
-      addressModel = AddressModel.fromJson(jsonDecode(sharedPreferences.getString(AppConstants.userAddress)!));
+      String? addressString = sharedPreferences.getString(AppConstants.userAddress);
+      if (addressString != null) {
+        addressModel = AddressModel.fromJson(jsonDecode(addressString));
+      }
     }catch(e) {
       debugPrint('Did not get shared Preferences address . Note: $e');
     }
@@ -175,7 +178,10 @@ class SplashRepository implements SplashRepositoryInterface {
   Future<void> setModule(ModuleModel? module) async {
     AddressModel? addressModel;
     try {
-      addressModel = AddressModel.fromJson(jsonDecode(sharedPreferences.getString(AppConstants.userAddress)!));
+      String? addressString = sharedPreferences.getString(AppConstants.userAddress);
+      if (addressString != null) {
+        addressModel = AddressModel.fromJson(jsonDecode(addressString));
+      }
     }catch(e) {
       debugPrint('Did not get shared Preferences address . Note: $e');
     }

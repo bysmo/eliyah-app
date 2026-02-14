@@ -27,6 +27,10 @@ class ApiClient extends GetxService {
   late Map<String, String> _mainHeaders;
 
   ApiClient({required this.appBaseUrl, required this.sharedPreferences}) {
+    // WARNING: This bypasses SSL certificate validation for DEVELOPMENT ONLY
+    // DO NOT use this in production!
+    HttpOverrides.global = MyHttpOverrides();
+    
     token = sharedPreferences.getString(AppConstants.token);
     if (kDebugMode) {
       print('Token: $token');
@@ -251,4 +255,21 @@ class MultipartDocument {
   String key;
   FilePickerResult? file;
   MultipartDocument(this.key, this.file);
+}
+
+// WARNING: This class bypasses SSL certificate validation
+// ONLY use this for DEVELOPMENT/TESTING with self-signed certificates
+// REMOVE this before deploying to production!
+class MyHttpOverrides extends HttpOverrides {
+  @override
+  HttpClient createHttpClient(SecurityContext? context) {
+    return super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port) {
+        // Accept all certificates (DANGEROUS - development only!)
+        if (kDebugMode) {
+          print('WARNING: Accepting certificate for $host:$port (Development mode)');
+        }
+        return true;
+      };
+  }
 }

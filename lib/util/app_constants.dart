@@ -10,11 +10,11 @@ class AppConstants {
   static const String fontFamily = 'Roboto';
   static const bool payInWevView = false;
   static const int balanceInputLen = 10;
-  static const String webHostedUrl = 'https://eliyah.adadints.com';
+  static const String webHostedUrl = 'https://eliyah.aladints.com';
   static const bool useReactWebsite = false;
   static const String googleServerClientId = '345708509965-agln6biv84krpnngdphj87jkko7r9lb8.apps.googleusercontent.com';
 
-  static const String baseUrl = 'https://eliyah.adadints.com';
+  static const String baseUrl = 'https://eliyah.aladints.com';
   static const String categoryUri = '/api/v1/categories';
   static const String bannerUri = '/api/v1/banners';
   static const String storeItemUri = '/api/v1/items/latest';
@@ -297,6 +297,7 @@ class AppConstants {
   static const String taxi = 'rental';
 
   static List<LanguageModel> languages = [
+    LanguageModel(imageUrl: Images.english, languageName: 'Français', countryCode: 'FR', languageCode: 'fr'),
     LanguageModel(imageUrl: Images.english, languageName: 'English', countryCode: 'US', languageCode: 'en'),
     LanguageModel(imageUrl: Images.arabic, languageName: 'عربى', countryCode: 'SA', languageCode: 'ar'),
     LanguageModel(imageUrl: Images.spanish, languageName: 'Spanish', countryCode: 'ES', languageCode: 'es'),

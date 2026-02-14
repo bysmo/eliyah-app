@@ -18,8 +18,14 @@ class LocationRepository implements LocationRepositoryInterface {
     String address = 'Unknown Location Found';
     if(response.statusCode == 200 && response.body['status'] == 'OK') {
       address = response.body['results'][0]['formatted_address'].toString();
-    }else {
-      showCustomSnackBar(response.body['error_message'] ?? response.bodyString);
+    } else {
+      // Don't show error snackbar if it's just a missing API key on backend
+      // This prevents blocking the user experience
+      if (response.body != null && response.body['status'] != 'REQUEST_DENIED') {
+        showCustomSnackBar(response.body['error_message'] ?? response.bodyString);
+      }
+      // Return a generic address with coordinates
+      address = 'Lat: ${latLng.latitude.toStringAsFixed(6)}, Lng: ${latLng.longitude.toStringAsFixed(6)}';
     }
     return address;
   }

@@ -211,17 +211,25 @@ class LocationController extends GetxController implements GetxService {
 
   void updatePosition(CameraPosition? position, bool fromAddress) async {
     if(_updateAddAddressData) {
+      // Add null safety check
+      if (position == null) {
+        if (kDebugMode) {
+          print('updatePosition called with null position');
+        }
+        return;
+      }
+      
       _loading = true;
       update();
 
       if (fromAddress) {
         _position = Position(
-          latitude: position!.target.latitude, longitude: position.target.longitude, timestamp: DateTime.now(),
+          latitude: position.target.latitude, longitude: position.target.longitude, timestamp: DateTime.now(),
           heading: 1, accuracy: 1, altitude: 1, speedAccuracy: 1, speed: 1, altitudeAccuracy: 1, headingAccuracy: 1,
         );
       } else {
         _pickPosition = Position(
-          latitude: position!.target.latitude, longitude: position.target.longitude, timestamp: DateTime.now(),
+          latitude: position.target.latitude, longitude: position.target.longitude, timestamp: DateTime.now(),
           heading: 1, accuracy: 1, altitude: 1, speedAccuracy: 1, speed: 1, altitudeAccuracy: 1, headingAccuracy: 1,
         );
       }
