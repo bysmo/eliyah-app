@@ -23,6 +23,44 @@
           "other_platform_oauth_client": []
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345708509965:android:560d69b5a16efe43d20e44",
+        "android_client_info": {
+          "package_name": "com.eliyah.express.livreur"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBInIU5dzO0qlYG-ogbM3Q-wzNqWddItaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345708509965:android:b7afa18f6aa0605bd20e44",
+        "android_client_info": {
+          "package_name": "com.eliyah.express.vendeur"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBInIU5dzO0qlYG-ogbM3Q-wzNqWddItaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
     }
   ],
   "configuration_version": "1"
