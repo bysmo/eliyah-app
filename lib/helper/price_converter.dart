@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:eliyah_express/util/styles.dart';
 
 class PriceConverter {
-  static String convertPrice(double? price, {double? discount, String? discountType, bool forDM = false, bool isFoodVariation = false, String? formatedStringPrice, bool forTaxi = false, bool forMenuWallet = false}) {
+  static String convertPriceOld(double? price, {double? discount, String? discountType, bool forDM = false, bool isFoodVariation = false, String? formatedStringPrice, bool forTaxi = false, bool forMenuWallet = false}) {
     if(discount != null && discountType != null){
       if(discountType == 'amount' && !isFoodVariation) {
         price = price! - discount;
@@ -31,6 +31,60 @@ class PriceConverter {
         '${formatedStringPrice ?? toFixed(price!).toStringAsFixed(forDM ? 0 : Get.find<SplashController>().configModel!.digitAfterDecimalPoint!)
         .replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (Match m) => '${m[1]},')}'
         '${isRightSide ? ' ${Get.find<SplashController>().configModel!.currencySymbol!}' : ''}';
+  }
+
+  static String convertPrice(
+      double? price, {
+        double? discount,
+        String? discountType,
+        bool forDM = false,
+        bool isFoodVariation = false,
+        String? formatedStringPrice,
+        bool forTaxi = false,
+        bool forMenuWallet = false,
+      }) {
+    if (price == null) return '';
+
+    final config = Get.find<SplashController>().configModel!;
+    final symbol = config.currencySymbol ?? '';
+    final isRightSide = config.currencySymbolDirection == 'right';
+
+    // 🔹 Gestion remise
+    if (discount != null && discountType != null) {
+      if (discountType == 'amount' && !isFoodVariation) {
+        price -= discount;
+      } else if (discountType == 'percent') {
+        price -= (discount / 100) * price;
+      }
+    }
+
+    // 🔹 Format compact (wallet / taxi)
+    if (forMenuWallet || (forTaxi && price > 100000)) {
+      final compact = intl.NumberFormat.compact(locale: 'fr_FR').format(price);
+      return isRightSide ? '$compact $symbol' : '$symbol $compact';
+    }
+
+    // 🔹 Si prix déjà formaté
+    if (formatedStringPrice != null) {
+      return isRightSide
+          ? '$formatedStringPrice $symbol'
+          : '$symbol $formatedStringPrice';
+    }
+
+    // 🔹 Format normal
+    final decimals = forDM ? 0 : (config.digitAfterDecimalPoint ?? 0);
+
+    final formatter = intl.NumberFormat.currency(
+      locale: 'fr_FR',
+      symbol: '',
+      decimalDigits: decimals,
+    );
+
+    String formattedNumber = formatter.format(price).trim();
+
+    return isRightSide
+        ? '$formattedNumber $symbol'
+        : '$symbol $formattedNumber';
   }
 
   static Widget convertAnimationPrice(double? price, {double? discount, String? discountType, bool forDM = false, TextStyle? textStyle}) {
